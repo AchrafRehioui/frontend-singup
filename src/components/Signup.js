@@ -28,6 +28,7 @@ export default function Signup() {
         }
         setLoading(false)
     }
+
     return (
         <>
             <Card>
