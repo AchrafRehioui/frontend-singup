@@ -1,16 +1,11 @@
-import React from 'react';
-import { render } from 'react-dom';
-import App from "./components/App";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { firebase } from './lib/firebase.prod';
-import { FirebaseContext } from './context/firebase';
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./components/App"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-render(
-  <>
-    <FirebaseContext.Provider value={{ firebase }}>
-      <App />
-    </FirebaseContext.Provider>
-
-  </>,
-  document.getElementById('root')
-);
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+)
